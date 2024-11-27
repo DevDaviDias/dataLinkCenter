@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Servidores de Armazenamento - Data Link</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .excel-table {
+            width: 20%;
+            border-collapse: collapse;
+            margin: auto;
+            font-size: 12px; 
+        }
+        .excel-table th,
+        .excel-table td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 8px;
+        }
+        .excel-table th {
+            background-color: #f4f4f4;
+            color: #333;
+            font-weight: bold;
+        }
+        .excel-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .excel-table tr:hover {
+            background-color: #f1f1f1;
+        }
+        .media {
+            background-color: rgba(0, 128, 0, 0.247);
+            font-weight: 700;
+        }
+        h1, h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="save-note" onclick="window.history.back();">Voltar</button>
+    <div class="caixa">
+        <h1>Relatório de Servidores de Armazenamento - Data Link</h1>
+        <h2>Total de Dados Armazenados: 258.740 GB</h2>
+        <table class="excel-table">
+            <thead>
+                <tr>
+                    <th>Servidor</th>
+                    <th>Capacidade Total (GB)</th>
+                    <th>Dados Armazenados (GB)</th>
+                    <th>Taxa de Transferência (MB/s)</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>DL-Server-001</td>
+                    <td>50.000</td>
+                    <td>48.250</td>
+                    <td>120</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>DL-Server-002</td>
+                    <td>70.000</td>
+                    <td>67.500</td>
+                    <td>150</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>DL-Server-003</td>
+                    <td>40.000</td>
+                    <td>38.200</td>
+                    <td>100</td>
+                    <td>Em manutenção</td>
+                </tr>
+                <tr>
+                    <td>DL-Server-004</td>
+                    <td>60.000</td>
+                    <td>58.450</td>
+                    <td>110</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>DL-Server-005</td>
+                    <td>38.000</td>
+                    <td>34.000</td>
+                    <td>95</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>DL-Server-006</td>
+                    <td>50.000</td>
+                    <td>50.000</td>
+                    <td>140</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>DL-Server-007</td>
+                    <td>60.000</td>
+                    <td>55.290</td>
+                    <td>125</td>
+                    <td>Em manutenção</td>
+                </tr>
+                <tr>
+                    <td>DL-Server-008</td>
+                    <td>40.000</td>
+                    <td>40.000</td>
+                    <td>105</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>DL-Server-009</td>
+                    <td>30.000</td>
+                    <td>28.500</td>
+                    <td>90</td>
+                    <td>Inativo</td>
+                </tr>
+                <tr>
+                    <td>DL-Server-010</td>
+                    <td>40.000</td>
+                    <td>39.000</td>
+                    <td>115</td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="media">Total Geral</td>
+                    <td class="media">258.740</td>
+                    <td class="media"></td>
+                    <td class="media"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

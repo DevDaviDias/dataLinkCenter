@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário com Anotações</title>
+    <link rel="stylesheet" href="css/calendario.css">
+</head>
+
+<body>
+    
+
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prev-month" class="navegar">←</button>
+            <span id="month-name"></span>
+            <button id="next-month" class="navegar">→</button>
+        </div>
+        <div class="calendar-grid">
+
+        </div>
+
+        <div class="modal" id="modal">
+
+            <div class="modal-content">
+                <button id="close-modal" class="fechar">X</button>
+                <button id="save-note" class="hidden">Ver Detalhes</button>
+                <h3>Relatório Diário</h3>
+                <p class="quant">Quantidade de Arquivos: <span class="dados">20</span> planilhas</p>
+                <h4 class="espace">Resumo de Dados</h4>
+                <p class="text-paragrafo">Média de Registros por Planilha: <span class="dados">20.000 </span>linhas</p>
+                <button  onclick="window.location.href='info/balanca.html';">Ver Detalhes</button>
+                <h4 class="espace">Servidor de Armazenamento</h4>
+                <p class="text-paragrafo">Total de Dados Armazenados: <span class="dados">258.740 GB </span>Gigabytes</p>
+                <textarea id="note-text" placeholder="" class="hidden"></textarea>
+                <button id="save-note" onclick="window.location.href='info/laboratorio.html';">Ver Detalhes</button>
+                
+                
+
+
+            </div>
+        </div>
+
+        <script src="script/script.js"></script>
+</body>
+
+</html>
